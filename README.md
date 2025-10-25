@@ -9,6 +9,7 @@ The eventual goal is a framework in which to construct type systems, without int
 systems, rather than needing to modify the type systems ad hoc to fit the host lang. 
 That is, it should be a dependent-typed lang which is itself extensible and capable of meta-programming, rather than only being a rigid target implemented in Racket (such that 
 extensions to the lang must always escape to Racket, or rather than only being an embedded DSL, a la Turnstile).
+
 A bit more on the envisioned characteristics of the lang:
 - Provides a framework for implementing typed langs
   - Minimal + readable core; can be reasoned about by inspection (and, to some degree, 'shaped like its semantics')
@@ -27,6 +28,7 @@ A bit more on the envisioned characteristics of the lang:
   - Straightforward system for extending or specializing modules and their signatures
   - Relatively efficient (e.g. implementation ideas from Andras Kovacs' SmallTT)
 - Signatures and Modules foremost; the core theory comprises telescopes (of judgements) and equalities -- everything else is derived
+
 While each of the above points has been achieved in multiple existing langs, I do not think any of them *quite* meet these aspirations. Or maybe I just like Scheme syntax
 better than Agda's or Lean's.  
 Disclaimer: I am not a professional type theorist or computer scientist. I began in molecular biology; only a few years ago did I realize how much I enjoyed, and want to learn
