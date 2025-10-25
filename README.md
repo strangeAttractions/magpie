@@ -33,7 +33,7 @@ While each of the above points has been achieved in multiple existing langs, I d
 better than Agda's or Lean's.  
 Disclaimer: I am not a professional type theorist or computer scientist. I began in molecular biology; only a few years ago did I realize how much I enjoyed, and want to learn
 more of, math and programming. So I will need all the help I can get (easier said than done, when I am not personally acquainted with any computer scientists!)
-This is likely to be a many years long project, even with the minimalism of the lang even if I do find help. In fact, I am still trying to figure out *what the underlying
+This is certainly a many-years-long project, even with the minimalism of the lang, and even if I *do* find help. In fact, I am still trying to figure out *what the underlying
 semantics should be*, and *what the best design for the implementation should be*. So this is only a dream, for now (hopefully not A Dream of Spring...).
 
 Main inspirations:
