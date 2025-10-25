@@ -1,6 +1,6 @@
 # magpie
-Currently just a bunch a pseudocode scratchwork that is *not remotely runnable*, but is (intended to) eventually become a dependent-typed Scheme that would serve as a 
-metalanguage for implementing dependent-typed languages.
+Expect no more than a bunch a pseudocode scratchwork -- *not remotely runnable* -- but intended to eventually become a dependent-typed Scheme that would serve as a metalanguage
+for implementing dependent-typed languages.
 For now, the placeholder name is 'magpie' -- a mischievous bird, in accordance to both its Scheme lineage and dependent-typed aspirations.
 To start, the source lang will be Racket, though this will mostly be used as a 'batteries-included' Scheme. If I do not get as much from Racket's (powerful, but rather 
 complicated) macro knobs and handles as initially expected (i.e. if only a deep embedding is feasible, rather than shallow or mixed), then this will be rewritten in Chez Scheme. 
@@ -26,4 +26,23 @@ A bit more on the envisioned characteristics of the lang:
   - Interactions for incremental development
   - Straightforward system for extending or specializing modules and their signatures
   - Relatively efficient (e.g. implementation ideas from Andras Kovacs' SmallTT)
-- Signatures + Modules foremost; the core theory comprises telescopes (of judgements) and equalities -- everything else is derived
+- Signatures and Modules foremost; the core theory comprises telescopes (of judgements) and equalities -- everything else is derived
+While each of the above points has been achieved in multiple existing langs, I do not think any of them *quite* meet these aspirations. Or maybe I just like Scheme syntax
+better than Agda's or Lean's.  
+Disclaimer: I am not a professional type theorist or computer scientist. I began in molecular biology; only a few years ago did I realize how much I enjoyed, and want to learn
+more of, math and programming. So I will need all the help I can get (easier said than done, when I am not personally acquainted with any computer scientists!)
+This is likely to be a many years long project, even with the minimalism of the lang even if I do find help. In fact, I am still trying to figure out *what the underlying
+semantics should be*, and *what the best design for the implementation should be*. So this is only a dream, for now (hopefully not A Dream of Spring...).
+
+Main inspirations:
+- Scheme: balance of minimalism & expressivity for (uni-typed) lambda calc; 'shaped like its semantics'
+  - Magpie's surface syntax will closely resemble that of Scheme
+- Standard ML: balance of minimalism & expressivity for restriction of System F & parameterized modules
+  - Note: said 'minimalism' is the small set of built-ins; SML's surface syntax is (for my taste) somewhat verbose
+- SmallTT (Kovacs): techniques for *efficient NbE* in dependent-typed system (by controlled unfolding in particular)
+- Andromeda 2 (Bauer et al): generic framework for implementing type systems as algebraic theories
+- BiTTs (Felicissimo): generic bidirectional typing (to make the convenience of partial annotation compatible with an algebraic representation)
+- Pterodactyl (Sterling's WIP): telescopes as fundamental, module operations as extending & quotienting telescopes
+- ModTT+ParamTT (Sterling & Harper 2021) / MTT (Gratzer et al 2019-23): modal type system for phased compilation/evaluation
+  - this may or may not be possible to implement in sufficiently generic way
+
