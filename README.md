@@ -1,7 +1,7 @@
 # magpie
 Expect no more than a bunch a pseudocode scratchwork -- *not remotely runnable* -- but intended to eventually become a dependent-typed Scheme that would serve as a metalanguage
 for implementing dependent-typed languages.
-For now, the placeholder name is 'magpie' -- a mischievous bird, in accordance to both its Scheme lineage and dependent-typed aspirations.
+For now, the placeholder name is 'Magpie' -- a mischievous bird, in accordance to both its Scheme lineage and dependent-typed aspirations.
 To start, the source lang will be Racket, though this will mostly be used as a 'batteries-included' Scheme. If I do not get as much from Racket's (powerful, but rather 
 complicated) macro knobs and handles as initially expected (i.e. if only a deep embedding is feasible, rather than shallow or mixed), then this will be rewritten in Chez Scheme. 
 Or perhaps even in an ML-family lang, as I become more experienced with SML (or take up Haskell).
